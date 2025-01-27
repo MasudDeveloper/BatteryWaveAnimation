@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.library'
+    alias(libs.plugins.android.library)
     id 'maven-publish'
 }
 
@@ -34,3 +34,14 @@ dependencies {
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
 }
+
+//publishing {
+//    publications {
+//        release(MavenPublication) {
+//            from components.release
+//            groupId = "com.github.MasudDeveloper"
+//            artifactId = "BatteryWaveAnimation"
+//            version = "1.0.0"
+//        }
+//    }
+//}
